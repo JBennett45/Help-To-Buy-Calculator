@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+$ltofont: 'Lato', sans-serif;
+$light_graybg: #F8F8F8;
+
+body {
+  font-family: $ltofont;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+@import "vendor/_rangeslider";
+@import "vendor/_custom_range_tooltip";
+@import "_calculator";

@@ -1,0 +1,15 @@
+{
+  "name": "htb_mortgage_calculator",
+  "version": "1.0.0",
+  "description": "HTB Mortgage Calculator Creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jon Bennett",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0"
+  }
+}
