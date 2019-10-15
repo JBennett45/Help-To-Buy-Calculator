@@ -94,12 +94,17 @@
       justify-content: space-between;
       color:#565656;
       font-size:15px;
+      .instruction_mort {
+        display: block;
+        font-size:10px;
+        line-height: 14px;
+      }
       &:nth-child(odd) {
         background-color: #FFFFFF;
       }
-      &:last-child {
-        font-weight:700;
-      }
+    }
+    .remain_mort_neededBd {
+      font-weight:700;
     }
   }
 }

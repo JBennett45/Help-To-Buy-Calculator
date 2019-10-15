@@ -1,7 +1,7 @@
 
 
-# Help To Buy Equity Loan Calculator
-A simple Javascript and jQuery powered Help To Buy Equity Calculator built with the purpose of given users an estimate idea of how much they would need a mortgage for when using the equity loan.
+# Mortgage Calculator With Help To Buy Equity Support
+A  Javascript and jQuery powered mortgage calculator with help to buy equity support, along with instant feedback on if the mortgage is affordable to them based on income.
 ## Installation
 Download the repository, run node install off the package.json then use gulp watch, the gulpfile included will do the rest.
 

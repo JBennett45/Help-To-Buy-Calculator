@@ -36,6 +36,17 @@ function calculateHTBPayment() {
   var finaldeposit = minus_dep.toFixed(0);
 	return finaldeposit;
 }
+// calculate lowest mortage bracket - 3.5
+function calcLowerMortBracket() {
+  var lowestmort = user_incomeChar*3.5;
+	return lowestmort;
+}
+// calculate highest mortage bracket - 4.5*
+function calcHigherMortBracket() {
+  var highmort = user_incomeChar*4.5;
+	return highmort;
+}
+
 // calculate or spot errors
 function getValues() {
   // reset errors
@@ -58,6 +69,11 @@ function getValues() {
   // all good calculate HTB
   else {
     subtracted_htb = calculateHTBPayment();
+
+    // potenital mortgage available
+    lowest_mort = calcLowerMortBracket();
+    hgihest_mort = calcHigherMortBracket();
+    // populate results
     jQuery('.prop_ammount').html(numberSepWithCommas(prop_value));
     // Show or hide HTB result based on check box
     if (checkBox_htb_checked.checked == true){
@@ -72,6 +88,17 @@ function getValues() {
     }
     jQuery('.dep_ammount').html(numberSepWithCommas(userepChar));
     jQuery('.mortremain_ammount').html(numberSepWithCommas(remain_Mortgage));
+    jQuery('.min_mort_allow').html(numberSepWithCommas(lowest_mort));
+    jQuery('.max_mort_allow').html(numberSepWithCommas(hgihest_mort));
+
+
+    if(remain_Mortgage < hgihest_mort) {
+      jQuery('.mortgage_outcome_result').css('color','green').html('Based on your income, you may be able to get a mortgage of this value.');
+    }
+    else {
+      jQuery('.mortgage_outcome_result').css('color','red').html('Based on your income, it may be difficult to get a mortgage of this value.');
+    }
+
     jQuery('.Htb_Results').show(300);
   }
 };

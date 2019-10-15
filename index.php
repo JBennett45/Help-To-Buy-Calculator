@@ -1,6 +1,4 @@
 <?php include('includes/header.php'); ?>
-
-
 <div class="calc_main_Wrap">
   <form id="htb_form_calc">
     <div class="top_row_htb">
@@ -12,7 +10,6 @@
            <span>&pound;</span> <input type="text" id="household_income" name="household_income"/>
         </div>
       </div>
-
       <div class="col">
         <div class="label_wrapp">
           <label>Deposit</label>
@@ -21,7 +18,6 @@
            <span>&pound;</span> <input type="text" id="user_deposit" name="user_deposit"/>
         </div>
       </div>
-
       <div class="col">
         <div class="label_wrapp">
           <label>Help To Buy Equity?</label>
@@ -31,8 +27,6 @@
            <span></span> <input type="checkbox" id="helpToBuyShow" onclick="toggleSelectorHtb()">
         </div>
       </div>
-
-
       <div id="htb_equity_amm">
         <div class="col">
           <div class="label_wrapp">
@@ -49,7 +43,6 @@
           </div>
         </div>
       </div>
-
       <div class="col">
         <div class="label_wrapp">
           <label>Property Value</label>
@@ -66,7 +59,7 @@
     </div>
     <div class="Htb_Results">
       <div class="results_title_wrap">
-        <h4>Mortgage guide results</h4>
+        <h4>Mortgage results</h4>
       </div>
       <div class="results_breakdown_wrap">
         <div class="inner_bdwp">
@@ -93,12 +86,19 @@
             - &pound;	<span class="dep_ammount"></span>
           </div>
         </div>
-        <div class="inner_bdwp">
+        <div class="inner_bdwp remain_mort_neededBd">
           <div class="label_bdwp">
             Estimated Mortgage Needed:
           </div>
           <div class="label_bdwp">
             &pound;	<span class="mortremain_ammount"></span>
+          </div>
+        </div>
+        <div class="inner_bdwp">
+          <div class="label_bdwp">
+            You may be able to borrow: &pound; <span class="min_mort_allow"></span> - &pound; <span class="max_mort_allow"></span>
+            <p class="mortgage_outcome_result"></p>
+            <span class="instruction_mort">This is based on 3.5 to 4.5 times your salary income and is purely a guide to what you may be offered.</span>
           </div>
         </div>
       </div>
