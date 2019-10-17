@@ -20,7 +20,7 @@
       </div>
       <div class="col">
         <div class="label_wrapp">
-          <label>Help To Buy Equity?</label>
+          <label>Include HTB Equity?</label>
           <span>Tick this box to use HTB equity Loan</span>
         </div>
         <div class="input_wrapp ">
