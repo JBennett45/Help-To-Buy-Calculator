@@ -14,5 +14,8 @@ gulp watch
 ## Dependencies
 The project uses two dependencies - laravel elixir and gulp, they are in the package.json. It also uses jQuery (linked via CDN in the footer) and rangeslider custom range styler - all files included.
 
+### Demo 
+[Live Demo](https://www.jbdev.co.uk/example-projects/mortgage-calculator/)
+
 #### License
 [MIT](https://choosealicense.com/licenses/mit)
